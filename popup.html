@@ -4,18 +4,28 @@
     <title>Slightly Improved IVLE UI Extension's Popup</title>
     <style>
       body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-family: sans-serif;
         font-size: 100%;
       }
-      #status {
-        /* avoid an excessively wide status text */
+      #notice {
         white-space: pre;
         max-width: 300px;
+        font-size: 12px;
+      }
+      a {
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        margin: 5px 0px;
       }
     </style>
+    <base target="_blank">
   </head>
   <body>
-    <div id="status">It's already working :)</div>
+    <a tabindex="-1" href="https://ivle.nus.edu.sg/v1/workspace.aspx">Workspace</a>
+    <a tabindex="-1" href="https://ivle.nus.edu.sg/v1/File/download_all.aspx">Download files</a>
+    <a tabindex="-1" href="https://ivle.nus.edu.sg/v1/Gradebook/list_gradebook.aspx">Gradebook</a>
+    <div id="notice">Note that you may still need to login :)</div>
   </body>
 </html>
 
